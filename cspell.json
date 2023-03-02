@@ -1,0 +1,16 @@
+{
+  "version": "0.1",
+  "language": "en",
+  "words": [
+    "youtube",
+    "udemy",
+    "scrimba",
+    "thinkster",
+    "signup",
+    "Scroller",
+    "Arial",
+    "pizzapokerguy",
+    "repos"
+  ],
+  "ignorePaths": ["polyfills.ts", "**/assets/**", "**.scss", "**.html"]
+}

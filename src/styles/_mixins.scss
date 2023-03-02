@@ -1,0 +1,136 @@
+@mixin box-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+@mixin linear-gradient-angular {
+  animation: color-angular 2s ease infinite alternate;
+
+  @keyframes color-angular {
+    0% {
+      color: $angular-red;
+    }
+
+    100% {
+      color: $angular-white;
+    }
+  }
+}
+
+@mixin linear-gradient-node {
+  animation: color-node 2s ease infinite alternate;
+
+  @keyframes color-node {
+    0% {
+      color: $node-dark-charcoal;
+    }
+
+    50% {
+      color: $node-russian-green;
+    }
+
+    100% {
+      color: $node-russian-green;
+    }
+  }
+}
+
+@mixin linear-gradient-html {
+  animation: color-html 2s ease infinite alternate;
+  @keyframes color-html {
+    0% {
+      color: $html-darkorang;
+    }
+
+    25% {
+      color: $html-lightorange;
+    }
+
+    50% {
+      color: $html-lightgrey;
+    }
+
+    75% {
+      color: $html-white;
+    }
+
+    100% {
+      color: $html-black;
+    }
+  }
+}
+
+@mixin linear-gradient-css {
+  animation: color-css 2s ease infinite alternate;
+  @keyframes color-css {
+    0% {
+      color: $angular-red;
+    }
+
+    100% {
+      color: $angular-white;
+    }
+  }
+}
+
+@mixin linear-gradient-sass {
+  animation: color-sass 2s ease infinite alternate;
+  @keyframes color-sass {
+    0% {
+      color: $css-darkblue;
+    }
+
+    25% {
+      color: $css-lightblue;
+    }
+
+    50% {
+      color: $css-lightgrey;
+    }
+
+    75% {
+      color: $css-white;
+    }
+
+    100% {
+      color: $css-black;
+    }
+  }
+}
+
+@mixin linear-gradient-github {
+  animation: color-github 2s ease infinite alternate;
+  @keyframes color-github {
+    0% {
+      color: $github-black;
+    }
+
+    50% {
+      color: $github-white;
+    }
+
+    100% {
+      color: $github-red;
+    }
+  }
+}
+
+@mixin glitchfx {
+  @keyframes glitchy {
+    0% {
+      text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+    }
+    25% {
+      text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+    }
+    50% {
+      text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
+    }
+    75% {
+      text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+    }
+    100% {
+      text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+    }
+  }
+}

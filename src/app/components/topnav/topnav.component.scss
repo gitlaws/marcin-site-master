@@ -1,0 +1,39 @@
+@import "src/styles/colors";
+@import "src/styles/breakPoints";
+@import "src/styles/_mixins";
+
+.grid {
+  display: grid;
+  color: $quaternary-background;
+}
+
+.zone {
+  grid-template-columns: 22% 22% auto;
+  grid-template-rows: 22% auto 22%;
+  @include box-shadow();
+}
+
+.logo {
+  background-color: $color6;
+
+  img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.angular {
+  align-items: center;
+  text-decoration: none;
+}
+
+.highlight {
+  background-color: $color2;
+}
+
+.icon {
+  background-color: $color3;
+  display: inline-block;
+  text-decoration: underline;
+  font-size: 24px;
+}

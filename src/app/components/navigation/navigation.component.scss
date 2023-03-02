@@ -1,0 +1,62 @@
+@import "src/styles/colors";
+@import "src/styles/breakPoints";
+@import "src/styles/_mixins";
+
+nav {
+  background-color: $black;
+
+  ul {
+    height: 48px;
+    display: grid;
+    margin: 0;
+    grid-template-columns: auto auto auto 1fr;
+    grid-gap: 20px;
+    padding: 0px 15px;
+    align-items: center;
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    li {
+      color: #fffffe;
+      display: inline-block;
+      // font-weight: bold;
+      // cursor: pointer;
+
+      &.home-icon {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        align-self: center;
+        padding-left: 15px;
+        font-size: 16px;
+
+        .highlight {
+          color: $top;
+          margin-left: 10px;
+        }
+      }
+
+      img {
+        height: 24px;
+        width: 24px;
+      }
+
+      &:last-child {
+        justify-self: end;
+        padding-right: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fffffe;
+        font-size: 24px;
+      }
+    }
+  }
+  @include box-shadow();
+}
+
+@media screen and (max-width: 1160px) {
+  .nav-container {
+    min-width: 768px;
+  }
+}

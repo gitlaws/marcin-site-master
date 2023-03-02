@@ -1,0 +1,70 @@
+@import "src/styles/breakPoints";
+@import "src/styles/colors";
+@import "/src/styles/mixins";
+
+#skills {
+  // color: $quaternary-background;
+
+  h3 {
+    text-align: center;
+    justify-self: center;
+    margin-top: 20px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  h3,
+  h4 {
+    color: $quaternary-background;
+  }
+
+  ul,
+  li {
+    text-align: center;
+    justify-self: center;
+  }
+}
+
+.skills-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 0 40px;
+  // grid-column: 2 / span 2
+  // grid-template-rows: 1fr;
+  justify-items: center;
+
+  .zone {
+    text-align: center;
+    font-size: 6em;
+    border-radius: 4px;
+    // border: 1px solid $quaternary-background;
+    transition: all 0.3s linear;
+  }
+
+  .fa-angular {
+    @include linear-gradient-angular;
+  }
+
+  .fa-node-js {
+    @include linear-gradient-node;
+  }
+
+  .fa-html5 {
+    @include linear-gradient-html;
+  }
+
+  .fa-css3-alt {
+    @include linear-gradient-css;
+  }
+
+  .fa-sass {
+    @include linear-gradient-sass;
+  }
+
+  .fa-gitkraken {
+    @include linear-gradient-github;
+  }
+}

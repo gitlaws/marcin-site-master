@@ -1,0 +1,51 @@
+@import "src/styles/colors";
+@import "src/styles/breakPoints";
+@import "/src/styles/mixins";
+
+footer {
+  margin-top: 20px;
+  h2 {
+    color: $quaternary-background;
+    text-align: center;
+  }
+
+  a {
+    position: absolute;
+  }
+  .glitchy-social {
+    // background: $angular-red;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 33.33%;
+    text-align: center;
+
+    .btn {
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      position: relative;
+    }
+
+    .fab {
+      // position: absolute;
+      color: $quaternary-background;
+      font-size: 4rem;
+      line-height: 90px;
+    }
+
+    &:focus .fab,
+    &:hover .fab {
+      @include glitchfx();
+      animation: glitchy 200ms infinite;
+    }
+  }
+
+  .copy-right {
+    background-color: $tertiary-background;
+    padding: 20px;
+    text-align: center;
+    color: #fffffe;
+  }
+}
