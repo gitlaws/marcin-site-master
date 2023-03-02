@@ -7,5 +7,5 @@ import { Component, Input } from "@angular/core";
 })
 export class DragdropComponent {
   @Input() public imageUrl = "assets/bgpoly.png";
-  @Input() public title = "Insert Title";
+  @Input() public title = "Drag & Drop";
 }
