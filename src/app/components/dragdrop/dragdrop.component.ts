@@ -25,14 +25,14 @@ export class DragdropComponent implements OnInit {
     ]),
     new Column("Drop", [
       "Lorem ipsum",
-      "foo",
-      "This was in the 'Research' column",
+      "Find a girlfriend",
+      "goals & aspirations",
     ]),
     new Column("Stuff", [
       "Get to work",
       "Pick up groceries",
       "Go home",
-      "Fall asleep",
+      "Automate the world",
     ]),
     // new Column("Done", [
     //   "Get up",
