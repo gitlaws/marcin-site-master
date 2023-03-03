@@ -18,29 +18,29 @@ export class DragdropComponent implements OnInit {
 
   constructor() {}
   board: Board = new Board("Test Board", [
-    new Column("Ideas", [
+    new Column("Drag", [
       "Some random idea",
       "This is another random idea",
       "build an awesome application",
     ]),
-    new Column("Research", [
+    new Column("Drop", [
       "Lorem ipsum",
       "foo",
       "This was in the 'Research' column",
     ]),
-    new Column("Todo", [
+    new Column("Stuff", [
       "Get to work",
       "Pick up groceries",
       "Go home",
       "Fall asleep",
     ]),
-    new Column("Done", [
-      "Get up",
-      "Brush teeth",
-      "Take a shower",
-      "Check e-mail",
-      "Walk dog",
-    ]),
+    // new Column("Done", [
+    //   "Get up",
+    //   "Brush teeth",
+    //   "Take a shower",
+    //   "Check e-mail",
+    //   "Walk dog",
+    // ]),
   ]);
 
   ngOnInit() {}
