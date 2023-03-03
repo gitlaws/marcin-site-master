@@ -15,6 +15,7 @@ import { SpasComponent } from "./components/spas/spas.component";
 import { CardComponent } from "./components/card/card.component";
 import { ComponentDocumentationComponent } from "./components/component-documentation/component-documentation.component";
 import { DragdropComponent } from "./components/dragdrop/dragdrop.component";
+import { DragDropModule } from "@angular/cdk/drag-drop";
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { DragdropComponent } from "./components/dragdrop/dragdrop.component";
   imports: [
     BrowserModule,
     HttpClientModule,
+    DragDropModule,
     RouterModule.forRoot(APP_ROUTES, {
       scrollPositionRestoration: "enabled",
       anchorScrolling: "enabled",
