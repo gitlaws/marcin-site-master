@@ -1,6 +1,7 @@
 import { Routes } from "@angular/router";
 import { HomeComponent } from "./views/home/home.component";
 import { ComponentDocumentationComponent } from "./components/component-documentation/component-documentation.component";
+import { CrudComponent } from "./components/crud/crud.component";
 
 export const APP_ROUTES: Routes = [
   {
@@ -32,4 +33,7 @@ export const APP_ROUTES: Routes = [
     path: "",
     component: HomeComponent,
   },
+
+  { path: "crud", component: CrudComponent },
+  { path: "", redirectTo: "/crud", pathMatch: "full" },
 ];
