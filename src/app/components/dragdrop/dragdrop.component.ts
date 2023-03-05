@@ -17,7 +17,7 @@ export class DragdropComponent implements OnInit {
   @Input() public title = "Drag & Drop";
 
   constructor() {}
-  board: Board = new Board("Test Board", [
+  board: Board = new Board("Test", [
     new Column("Drag", [
       "Some random idea",
       "This is another random idea",

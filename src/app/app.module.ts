@@ -16,6 +16,7 @@ import { CardComponent } from "./components/card/card.component";
 import { ComponentDocumentationComponent } from "./components/component-documentation/component-documentation.component";
 import { DragdropComponent } from "./components/dragdrop/dragdrop.component";
 import { DragDropModule } from "@angular/cdk/drag-drop";
+import { CrudComponent } from "./components/crud/crud.component";
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { DragDropModule } from "@angular/cdk/drag-drop";
     CardComponent,
     ComponentDocumentationComponent,
     DragdropComponent,
+    CrudComponent,
   ],
   imports: [
     BrowserModule,
